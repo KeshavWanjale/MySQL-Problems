@@ -79,6 +79,10 @@ FROM Employees e
 LEFT JOIN Employees m
 ON e.ManagerID = m.EmployeeID;
 
+-- ** join Without using join keyword
+SELECT e.FirstName, d.DepartmentName
+FROM Employees e, Departments d
+WHERE e.DepartmentID = d.DepartmentID
 
 
 
